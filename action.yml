@@ -1,0 +1,13 @@
+name: 'action-github-app-token-config'
+description: 'Use GitHub auth tokens for a GitHub App to set git config'
+author: 'The Internet Open Protocols Alliance'
+inputs:
+  app_id:
+    required: true
+    description: 'GitHub App ID'
+  private_key:
+    required: true
+    description: 'Private key for the GitHub App'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
